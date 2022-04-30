@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/ico.png">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/generarDatos.css">
+    <title>Generar Datos BD</title>
+</head>
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="./index.html">
+      <img src="img/ico.png" class="d-inline-block align-top" id="icon">
+      data<span style="color: #efb810;">Ramdom</span>
+    </a>
+  </nav>
+  <form method="get" action="codigo.php">
+    <div id="datosTabla">
+      <div id="datosTabla__Options"></div>
+      <div id="plusButton" title="Añadir">+</div>
+    </div>
+    <main id="Containter">
+        <div id="Menu">
+          <h1>Generar Datos</h1>
+          <p>Cantidad de Filas:</p>
+          <input type="number" name="cantFilas" placeholder="Cantidad de Filas">
+          <p>Rango de AutoIncrement</p>
+          <input type="number" name="AI_Min" min="0" id="inputAI" placeholder="AI" disabled>
+          <label><input type="checkbox" value="AI" name="AI" id="checkboxAI"> Auto Increment</label><br>
+          <!-- ID AUTO INCREMENT CHECKBOX -->
+          <input type="submit" id="submit">
+        </div>
+    </main>
+  </form>
+</body>
+<script src="js/bootstrap.js"></script>
+<script src="js/script.js"></script>
+<script src="js/chance.js"></script>
+</html>
